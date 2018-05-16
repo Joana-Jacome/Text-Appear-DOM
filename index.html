@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button id="textChanger">Click me to change the text</button>
+        <div id="firstDiv">This text will change on button click</div>
+        <button id="textAppender">Click me to append</button>
+        <div id="secondDiv">You are..</div>
+        <button id="htmlAdder">Click to create HTML</button>
+        <div id="thirdDiv"></div>
+        
+    </body>
+    <script>
+
+        document.getElementById("textChanger").onclick = function(){
+            document.getElementById("firstDiv").innerHTML = "Text is changed";
+        }
+        document.getElementById("textAppender").onclick = function(){
+            document.getElementById("secondDiv").innerHTML += "great";
+        }
+
+        document.getElementById("htmlAdder").onclick = function(){
+            document.getElementById("thirdDiv").innerHTML = "<ul><li>Cat</li><li>Dog</li><li>Bird</li></ul>"
+        }
+    
+    
+    </script>
+</html>
